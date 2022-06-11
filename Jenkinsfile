@@ -2,8 +2,8 @@ pipeline {
      environment {
        IMAGE_NAME = "static-website-example"
        IMAGE_TAG = "latest"
-       STAGING = "fz-staging"
-       PRODUCTION = "fz-production"
+       STAGING = "static-website-example-franckdevci-staging"
+       PRODUCTION = "static-website-example-franckdevci-production"
      }
      agent none
      stages {
