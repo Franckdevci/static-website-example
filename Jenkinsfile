@@ -20,7 +20,7 @@ pipeline {
             steps {
                script {
                  sh '''
-                    docker run --name $IMAGE_NAME -d -p 8080:80  franckdevci/$IMAGE_NAME:$IMAGE_TAG
+                    docker run --name $IMAGE_NAME -d -p 8081:80  franckdevci/$IMAGE_NAME:$IMAGE_TAG
                     sleep 5
                  '''
                }
