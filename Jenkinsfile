@@ -2,8 +2,8 @@ pipeline {
      environment {
        IMAGE_NAME = "static-website-example"
        IMAGE_TAG = "latest"
-       STAGING = "F-staging"
-       PRODUCTION = "f-production"
+       STAGING = "fz-staging"
+       PRODUCTION = "fz-production"
      }
      agent none
      stages {
@@ -63,7 +63,7 @@ pipeline {
             }
       agent any
       environment {
-          HEROKU_API_KEY = credentials('heroku_api_key')
+          HEROKU_API_KEY = credentials('HEROKUAPKEY')
       }  
       steps {
           script {
